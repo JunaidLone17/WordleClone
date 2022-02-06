@@ -89,5 +89,16 @@
     margin-left: 300px;
     margin-top: 300px;
   }
-
+  .keyboard {
+    margin-top: 80px;
+  }
+  .element1 {
+    border: 3px solid #d3d7db;
+    width: 80px;
+    height: 66px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
 }
