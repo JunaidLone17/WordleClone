@@ -14,7 +14,7 @@
   margin-left: 80px;
 }
 .boxfill {
-  margin-left: 11%;
+  margin-left: 15%;
   font-weight: bolder;
   text-transform: capitalize;
 }
@@ -100,5 +100,10 @@
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+  }
+  .boxfill {
+    margin-left: 10%;
+    font-weight: bolder;
+    text-transform: capitalize;
   }
 }
