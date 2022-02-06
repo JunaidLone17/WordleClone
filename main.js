@@ -1,5 +1,6 @@
 var word = ['P', 'A', 'I', 'N', 'T']
 var wordinstr = "PAINT";
+var canedit = true;
 var q = document.getElementById('q');
 var w = document.getElementById('w');
 var e = document.getElementById('e');
@@ -61,6 +62,7 @@ var boxf5 = document.getElementById('fifth6');
 var tofill = 0;
 function nextbox() {
     tofill = tofill + 1
+    canedit = true;
 }
 q.addEventListener("click", (event) => {
     if (tofill === 0) {
@@ -4097,137 +4099,193 @@ back.addEventListener("click", (event) => {
         if (tofill === 0) {
         return
     }
-    if (tofill-1 === 0) {
-        boxa1.innerText = '';
-        tofill = tofill - 1;
+   
+    if (tofill - 1 === 0) {
+        if (tofill < 4) {
+            boxa1.innerText = '';
+            tofill = tofill - 1;
+        }
     }	
     if (tofill-1 ===1) {
-        boxa2.innerText = '';
-        tofill = tofill - 1;
+        if (tofill < 4) {
+            boxa2.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 2) {
-        boxa3.innerText = '';
-        tofill = tofill - 1;
+      if (tofill < 4) {
+            boxa3.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 3) {
-        boxa4.innerText = '';
-        tofill = tofill - 1;
+       if (tofill < 4) {
+            boxa4.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 4) {
-        boxa5.innerText = '';
-        tofill = tofill - 1;
+        if (tofill < 4) {
+            boxa5.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 5) {
-        boxb1.innerText = '';
-        tofill = tofill - 1;
-    }
+        if (tofill < 9) {
+            boxb1.innerText = '';
+            tofill = tofill - 1;
+        }
+        }
     if (tofill-1 === 6) {
-        boxb2.innerText = '';
-        tofill = tofill - 1;
+      if (tofill < 9) {
+            boxb2.innerText = '';
+            tofill = tofill - 1;
+        }
     }
 
-    if (tofill-1 === 7) {
-        boxb3.innerText = '';
-        tofill = tofill - 1;
+    if (tofill - 1 === 7) {
+        if (tofill < 9) {
+            boxb3.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 8) {
-        boxb4.innerText = '';
-        tofill = tofill - 1;
+      if (tofill < 9) {
+            boxb4.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 9) {
-        boxb5.innerText = '';
-        tofill = tofill - 1;
+        if (tofill < 9) {
+            boxb5.innerText = '';
+            tofill = tofill - 1;
+        }
     }
-    if (tofill-1 ===10) {
-        boxc1.innerText = '';
-        tofill = tofill - 1;
-    }
+    if (tofill - 1 === 10) {
+        if (tofill < 14) {
+            boxc1.innerText = '';
+            tofill = tofill - 1;
+        }
+        }
     if (tofill-1 === 11) {
-        boxc2.innerText = '';
-        tofill = tofill - 1;
+      if (tofill < 14) {
+            boxc2.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 12) {
-        boxc3.innerText = '';
-        tofill = tofill - 1;
-        
+      if (tofill < 14) {
+            boxc3.innerText = '';
+            tofill = tofill - 1;
+        }
     }
 
     if (tofill-1 === 13) {
-        boxc4.innerText = '';
-        tofill = tofill - 1;
+       if (tofill < 14) {
+            boxc4.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 14) {
-        boxc5.innerText = '';
-        tofill = tofill - 1;
-        
+      if (tofill < 14) {
+            boxc5.innerText = '';
+            tofill = tofill - 1;
+        }
     }
-    if (tofill-1 === 15) {
-        boxd1.innerText = '';
-        tofill = tofill - 1;
-    }
+    if (tofill - 1 === 15) {
+        if (tofill < 19) {
+            boxd1.innerText = '';
+            tofill = tofill - 1;
+        }
+        }
     if (tofill-1 == 16) {
-        boxd2.innerText = '';
-        tofill = tofill - 1;
+      if (tofill < 19) {
+            boxd2.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 17) {
-        boxd3.innerText = '';
-        tofill = tofill - 1;
+      if (tofill < 19) {
+            boxd3.innerText = '';
+            tofill = tofill - 1;
+        }
         
     }
 
     if (tofill-1 === 18) {
-        boxd4.innerText = '';
-        tofill = tofill - 1;
+        if (tofill < 19) {
+            boxd4.innerText = '';
+            tofill = tofill - 1;
+        }
         
     }
     if (tofill-1 === 19) {
-        boxd5.innerText = '';
-       tofill = tofill - 1;
-        
-    }if (tofill-1 === 20) {
-        boxe1.innerText = '';
-      tofill = tofill - 1;
+       if (tofill < 19) {
+            boxd5.innerText = '';
+            tofill = tofill - 1;
+        }
+    } if (tofill - 1 === 20) {
+        if (tofill < 24) {
+            boxe1.innerText = '';
+            tofill = tofill - 1;
+        }
     }
 
     if (tofill-1 === 21) {
-        boxe2.innerText = '';
-       tofill = tofill - 1;
+        if (tofill < 24) {
+            boxe2.innerText = '';
+            tofill = tofill - 1;
+        }
         
     }
     if (tofill-1 === 22) {
-        boxe3.innerText = '';
-     tofill = tofill - 1;
-        
+        if (tofill < 24) {
+            boxe3.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 23) {
-        boxe4.innerText = '';
-        tofill = tofill - 1;
+       if (tofill < 24) {
+            boxe4.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 24) {
-        boxe5.innerText = '';
-        tofill = tofill - 1;
+        if (tofill < 24) {
+            boxe5.innerText = '';
+            tofill = tofill - 1;
+        }
     }
-    if (tofill-1 === 25) {
-        boxf1.innerText = '';
-        tofill = tofill - 1;
+    if (tofill - 1 === 25) {
+        if (tofill < 29) {
+            boxf1.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 26) {
-        boxf2.innerText = '';
-     tofill = tofill - 1;
+     if (tofill < 29) {
+            boxf2.innerText = '';
+            tofill = tofill - 1;
+        }
         
     }
-    if (tofill-1 === 27) {
-        boxf3.innerText = '';
-       tofill = tofill - 1;
+    if (tofill - 1 === 27) {
+        if (tofill < 29) {
+            boxf3.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 28) {
-        boxf4.innerText = '';
-        tofill = tofill - 1;
-        
+       if (tofill < 29) {
+            boxf4.innerText = '';
+            tofill = tofill - 1;
+        }
     }
     if (tofill-1 === 29) {
-        boxf5.innerText = '';
-      tofill = tofill - 1;
+     if (tofill < 29) {
+            boxf5.innerText = '';
+            tofill = tofill - 1;
+        }
         
     }
 })
@@ -4251,7 +4309,7 @@ back.addEventListener("click", (event) => {
 
 function checkcomplete() {
     if (tofill === 4) {
-       
+        canedit = false;
         var word1 = boxa1.innerText + boxa2.innerText + boxa3.innerText + boxa4.innerText + boxa5.innerText;
          if (wordinstr === word1) {
             window.alert("You won");
@@ -4306,6 +4364,7 @@ function checkcomplete() {
         
     }
     if (tofill === 9) {
+        canedit = false;
         var word1 = boxb1.innerText + boxb2.innerText + boxb3.innerText + boxb4.innerText + boxb5.innerText;
           if (wordinstr === word1) {
             window.alert("You won");
@@ -4360,6 +4419,7 @@ function checkcomplete() {
        
     }
     if (tofill === 14) {
+        canedit = false;
         var word1 = boxc1.innerText + boxc2.innerText + boxc3.innerText + boxc4.innerText + boxc5.innerText;
           if (wordinstr === word1) {
             window.alert("You won");
@@ -4413,6 +4473,7 @@ function checkcomplete() {
         }
     }
     if (tofill === 19) {
+        canedit = false;
         
       var word1 = boxd1.innerText + boxd2.innerText + boxd3.innerText + boxd4.innerText + boxd5.innerText;
          if (wordinstr === word1) {
@@ -4468,6 +4529,7 @@ function checkcomplete() {
         }
     }
     if (tofill === 24) {
+        canedit = false;
     var word1 = boxe1.innerText + boxe2.innerText + boxe3.innerText + boxe4.innerText + boxe5.innerText;
           if (wordinstr === word1) {
             window.alert("You won");
@@ -4521,6 +4583,7 @@ function checkcomplete() {
         }
     }
     if (tofill === 29) {
+        canedit = false;
 var word1 = boxf1.innerText + boxf2.innerText + boxf3.innerText + boxf4.innerText + boxf5.innerText;
           if (wordinstr === word1) {
             window.alert("You won");
