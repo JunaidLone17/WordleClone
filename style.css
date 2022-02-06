@@ -1,0 +1,92 @@
+.main-section {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  margin-top: 2%;
+  font-family: "Rowdies", cursive;
+}
+.container {
+  border: 2px white solid;
+  width: 600px;
+  height: 310px;
+  margin-left: 80px;
+}
+.boxfill {
+  margin-left: 15%;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.element1 {
+  border: 3px solid #d3d7db;
+  width: 60px;
+  height: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.rowalpha {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+.rowbeta {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+.rowgamma {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+.rowquad {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+.rowpent {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+.rowhex {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+.keyboard {
+  margin-top: 8px;
+}
+.keyboard button {
+  margin: 2px 2px 2px 2px;
+  border: none;
+  outline: none;
+  background-color: #d3d7db;
+  border-radius: 8px;
+  font-weight: bolder;
+  width: 50px;
+  height: 50px;
+}
+.keyrow1 {
+  display: flex;
+}
+.keyrow2 {
+  margin-left: 30px;
+  display: flex;
+  margin-top: 5px;
+}
+.keyrow3 {
+  display: flex;
+  margin-top: 05px;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin-left: 300px;
+    margin-top: 300px;
+  }
+}
