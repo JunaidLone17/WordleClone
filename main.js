@@ -9336,7 +9336,7 @@ const wordslist = {
   zymes: true,
 }
 
-var wordinstr = "PAINT";
+var wordinstr = "BLACK";
 var canedit = true;
 
 var q = document.getElementById('q');
